@@ -3,7 +3,7 @@ import numpy as np
 from scipy import fft
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('D:\\LAB\\NILM\\DATA\\PLAID 2017 house2\\Air Conditioner (done)\\Frigidaire\\highcool\\1105.csv ')
+df = pd.read_csv('D:\\LAB\\NILM\\DATA\\PLAID 2017 house2\\Compact Lamp (done)')
 i = df.iloc[:, [0]]
 u = df.iloc[:, [1]]
 i.values.ravel()
@@ -16,8 +16,8 @@ u = u[0]
 U = np.array(u)
 I = np.array(i)
 instantaneous_power = U*I
-i = i[155000:160000]
-u = u[155000:160000]
+i = i[1500:16000]
+u = u[15000:16000]
 import numpy as np
 
 
